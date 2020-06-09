@@ -3,8 +3,8 @@ FROM debian:buster
 ADD ./srcs /srcs
 
 RUN \
-	apt-get update && \
-	apt-get upgrade && \
+	apt-get update -y && \
+	apt-get upgrade -y && \
 	apt-get install -y \
 		 nginx \
 		mariadb-server \
